@@ -22,6 +22,16 @@ export class InicioPage implements OnInit {
       icon: 'extension-puzzle-outline',
       name: 'Alert',
       redirecTo: '/alerta'
+    },
+    {
+      icon: 'footsteps-outline',
+      name: 'Avatar',
+      redirecTo: '/avatar'
+    },
+    {
+      icon: 'mic-circle-outline',
+      name: 'Button',
+      redirecTo: '/button'
     }
   ]
   constructor() { }
