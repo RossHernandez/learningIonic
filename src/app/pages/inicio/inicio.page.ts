@@ -32,6 +32,21 @@ export class InicioPage implements OnInit {
       icon: 'mic-circle-outline',
       name: 'Button',
       redirecTo: '/button'
+    },
+    {
+      icon: 'library-outline',
+      name: 'Cards',
+      redirecTo: '/card'
+    },
+    {
+      icon: 'calendar-outline',
+      name: 'DateTime',
+      redirecTo: '/date-time'
+    },
+    {
+      icon: 'pie-chart-outline',
+      name: 'Fabs',
+      redirecTo: '/fab'
     }
   ]
   constructor() { }
