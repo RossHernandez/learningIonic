@@ -47,7 +47,48 @@ export class InicioPage implements OnInit {
       icon: 'pie-chart-outline',
       name: 'Fabs',
       redirecTo: '/fab'
-    }
+    },
+    {
+      icon: 'grid-outline',
+      name: 'Grid',
+      redirecTo: '/grid'
+    },
+    {
+      icon: 'aperture-outline',
+      name: 'Infinite scroll',
+      redirecTo: '/infinite'
+    },
+    {
+      icon: 'receipt-outline',
+      name: 'Input forms',
+      redirecTo: '/input'
+    },
+    {
+      icon: 'newspaper-outline',
+      name: 'List Sliding',
+      redirecTo: '/list'
+    },
+    {
+      icon: 'list-outline',
+      name: 'List Reorder',
+      redirecTo: '/list-reorder'
+    },
+    {
+      icon: 'planet-outline',
+      name: 'Planets',
+      redirecTo: '/planets'
+    },
+    {
+      icon: 'person-circle-outline',
+      name: 'Peoples',
+      redirecTo: '/peoples'
+    },
+    {
+      icon: 'star-outline',
+      name: 'Starships',
+      redirecTo: '/starships'
+    },
+
   ]
   constructor() { }
 
