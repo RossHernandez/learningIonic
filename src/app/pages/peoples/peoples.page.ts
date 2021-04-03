@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-peoples',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeoplesPage implements OnInit {
 
-  constructor() { }
+  people: any;
+
+  constructor( private swapiservice: DataService) { }
 
   ngOnInit() {
+    this.swapiservice.getSwapi('people').subscribe(data => {
+      this.people = data;
+      console.log(this.people);
+
+    })
   }
 
 }

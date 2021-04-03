@@ -84,7 +84,7 @@ export class InicioPage implements OnInit {
       redirecTo: '/peoples'
     },
     {
-      icon: 'star-outline',
+      icon: 'airplane-outline',
       name: 'Starships',
       redirecTo: '/starships'
     },

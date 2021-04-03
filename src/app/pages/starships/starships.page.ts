@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-starships',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarshipsPage implements OnInit {
 
-  constructor() { }
+  starShips: any;
+
+  constructor( private swapiservice: DataService) { }
 
   ngOnInit() {
+    this.swapiservice.getSwapi('starships').subscribe(data => {
+      this.starShips = data;
+      console.log(this.starShips);
+
+    })
   }
 
 }
